@@ -1,1 +1,192 @@
-# Hi all!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tianji Zhou | Personal Website</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .about, .projects, .research, .publications, .skills {
+            background: #fff;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .section-content {
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tianji Zhou</h1>
+        <p>Physics and Astronomy Student | Researcher</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Tianji Zhou, a passionate Physics and Astronomy student currently studying at Haverford College. I have a deep interest in cosmological physics, general relativity, and scientific computing, with hands-on experience in developing innovative solutions to astrophysical problems.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="projects">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="section-content">
+                <h3>BS. Physics and Astronomy</h3>
+                <p><strong>Haverford College</strong> | GPA: 3.983/4.0 | Sep 2022 - Present</p>
+                <p>Advanced Coursework: General Relativity, Cosmological Physics, Advanced Classical Mechanics, Astroparticle Physics, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2>Research Experience</h2>
+            <div class="section-content">
+                <h3>Visiting Undergraduate Researcher | Dr. Lee Lindblom’s Lab</h3>
+                <p><strong>University of California, San Diego</strong> | Jun 2024 - Present</p>
+                <p>Worked on developing causal parametric representations of neutron-star equations of state using Chebyshev polynomial-based spectral expansions. Implemented Python solutions for both pressure-based and enthalpy-based representations, optimized spectral parameters, and minimized modeling errors.</p>
+            </div>
+            <div class="section-content">
+                <h3>Undergraduate Researcher | Prof. Daniel Grin’s Lab</h3>
+                <p><strong>Haverford College</strong> | May 2023 - Present</p>
+                <p>Developed methods to constrain dark matter models using principal component analysis and the generalized dark matter (GDM) framework. Utilized CLASS code to compute the equation of state and effective sound speed of dark sectors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <div class="section-content">
+                <h3>Chebyshev Based Spectral Representations of Neutron-Star Equations of State</h3>
+                <p><strong>Lindblom, Lee & Zhou, Tianji</strong> | Submitted to Physical Review D, Aug 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="section-content">
+                <p><strong>Languages:</strong> English (Fluent), Chinese (Native), Shanghainese (Native)</p>
+                <p><strong>Software:</strong> Python, Mathematica, LATEX, Linux, Matlab</p>
+                <p><strong>Packages:</strong> NumPy, SciPy, Matplotlib, Pandas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or send a message using the form below.</p>
+            <form action="your-email-endpoint" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tianji Zhou. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
