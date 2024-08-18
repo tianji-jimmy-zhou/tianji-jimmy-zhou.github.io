@@ -9,26 +9,22 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #2c2c2c; /* Deep grey background for the rest of the page */
+            color: white;
         }
 
         header {
-            background-color: black;
+            background: url('WMAP_2012.png') no-repeat center center/cover;
+            height: 400px;
             color: white;
             text-align: center;
             padding: 20px;
             position: relative;
         }
 
-        header img {
-            max-width: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto;
-        }
-
         header h1, header p {
             margin: 10px 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
         nav ul {
@@ -48,8 +44,12 @@
             font-size: 1.2rem;
         }
 
+        section {
+            padding: 20px;
+        }
+
         footer {
-            background-color: black;
+            background-color: #2c2c2c; /* Deep grey for the footer */
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -58,15 +58,51 @@
             bottom: 0;
         }
 
-        section {
-            padding: 20px;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: white;
+        }
+
+        .section-content h3 {
+            color: #ffffff;
+        }
+
+        .course-schedule {
+            margin-top: 20px;
+        }
+
+        .course-schedule ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .course-schedule ul li {
+            background-color: #3b3b3b;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .course-schedule ul li h4 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        .course-schedule ul li p {
+            margin: 5px 0 0 0;
+            color: #bbbbbb;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="WMAP_2012.png" alt="Tianji Zhou's Profile Image">
         <h1>Tianji Zhou</h1>
         <p>Physics and Astronomy Student | Researcher</p>
         <nav>
@@ -93,9 +129,31 @@
         <div class="container">
             <h2>Education</h2>
             <div class="section-content">
-                <h3>BS. Physics and Astronomy</h3>
+                <h3>BS. Physics and Astronomy (In Progress)</h3>
                 <p><strong>Haverford College</strong> | GPA: 3.983/4.0 | Sep 2022 - Present</p>
-                <p>Advanced Coursework: General Relativity, Cosmological Physics, Advanced Classical Mechanics, Astroparticle Physics, and more.</p>
+                <p>Advanced Coursework:  General Relativity, Cosmological Physics, Advanced Classical Mechanics, Advanced Electromagnetism, and Astroparticle Physics</p>
+                
+                <div class="course-schedule">
+                    <h3>Course Schedule</h3>
+                    <ul>
+                        <li>
+                            <h4>General Relativity (PHYS 403)</h4>
+                            <p>Monday, Wednesday, Friday - 10:00 AM to 11:00 AM</p>
+                        </li>
+                        <li>
+                            <h4>Cosmological Physics (PHYS 425)</h4>
+                            <p>Tuesday, Thursday - 1:00 PM to 2:30 PM</p>
+                        </li>
+                        <li>
+                            <h4>Advanced Classical Mechanics (PHYS 405)</h4>
+                            <p>Monday, Wednesday - 2:00 PM to 3:30 PM</p>
+                        </li>
+                        <li>
+                            <h4>Astroparticle Physics (PHYS 415)</h4>
+                            <p>Friday - 12:00 PM to 2:00 PM</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -188,4 +246,5 @@
 
 </body>
 </html>
+
 
