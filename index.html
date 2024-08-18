@@ -53,6 +53,10 @@
             font-size: 1.5rem;
         }
 
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
         section {
             padding: 20px;
         }
@@ -134,11 +138,11 @@
         <p>Physics and Astronomy Student | Researcher</p>
         <nav>
             <ul>
-                <li><a onclick="showSection('about')">About</a></li>
-                <li><a onclick="showSection('education')">Education</a></li>
-                <li><a onclick="showSection('research')">Research</a></li>
-                <li><a onclick="showSection('publications')">Publications</a></li>
-                <li><a onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#talk">Talks</a></li>
             </ul>
         </nav>
     </header>
@@ -152,7 +156,8 @@
             <p><strong>Email:</strong> jzhou@haverford.edu</p>
             <p><strong>Phone:</strong> +1 (484)-253-8449</p>
             <p><strong>Address:</strong> 370 Lancaster Ave, Haverford, PA, USA</p>
-            <h2>CV</h2><a href="Tianji_Zhou_CV.pdf" target="_blank" style="color: #fff;">Download My CV</a></p>
+            <h2>CV</h2>
+            <a href="Tianji_Zhou_CV.pdf" target="_blank" style="color: #fff;">Download My CV</a>
         </div>
     </section>
 
@@ -209,7 +214,7 @@
                 <p>Developed causal parametric representations of neutron-star equations of state using Chebyshev polynomial-based spectral expansions, including both pressure-based and enthalpy-based representations. Implemented enthalpy-based and pressure-based representations in Python to solve the equation of state. Optimized spectral parameters and calculated modeling errors using the Levenberg–Marquardt algorithm for first-order and second-order phase transition equations of state. Demonstrated that Chebyshev polynomial representations exhibit faster convergence in modeling errors compared to simple power-law representations.</p>
             </div>
             <div class="section-content">
-                <h3>Model Independent Probes of Dark Sector Physics | Prof. Daniel Grin’s Lab</h3>
+                <h3>Model Independent Probes of Dark Sector Physics | PI: Prof. Daniel Grin</h3>
                 <p><strong>Haverford College</strong> | May 2023 - Present</p>
                 <p>Developed a method to constrain dark matter models using principal component analysis and the generalized dark matter (GDM) framework. Selected the Wess-Zumino Dark Radiation model and the Chameleon Early Dark Energy model as benchmarks and derived expressions for the equations of state and effective sound speeds of dark sectors to constrain the GDM fluids. Computed the equations of state and effective sound speeds using the Cosmic Linear Anisotropy Solving System (CLASS) code. Projected the equation of state and effective sound speed onto the principal components of the cosmological dark fluid.</p>
             </div>
@@ -221,20 +226,25 @@
         <div class="container">
             <h2>Publications</h2>
             <div class="section-content">
-                <h3>Chebyshev Based Spectral Representations of Neutron-Star Equations of State</h3>
-                <p><strong>Lindblom, Lee & Zhou, Tianji</strong> | Submitted to Physical Review D, Aug 2024</p>
+                <p>Chebyshev Based Spectral Representations of Neutron-Star Equations of State</p>
+                <p>Lindblom, Lee & <strong>Zhou, Tianji</strong> | Submitted to Physical Review D, Aug 2024</p>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <!-- Talk Section -->
+    <section id="talk" class="talk">
         <div class="container">
-            <h2>Skills</h2>
+            <h2>Talks</h2>
             <div class="section-content">
-                <p><strong>Languages:</strong> English (Fluent), Chinese (Native), Shanghainese (Native)</p>
-                <p><strong>Software:</strong> Python, Mathematica, LATEX, Linux, Matlab</p>
-                <p><strong>Packages:</strong> NumPy, SciPy, Matplotlib, Pandas</p>
+                <h3>Physics and Cosmology: A Personal Journey</h3>
+                <p><strong>University of California, San Diego</strong> | September 2024</p>
+                <p>A talk exploring my journey through physics and cosmology, focusing on the intersection between dark matter research and gravitational physics, with highlights from my recent work in neutron-star equations of state.</p>
+            </div>
+            <div class="section-content">
+                <h3>Dark Matter and Early Universe Theories</h3>
+                <p><strong>Haverford College Physics Colloquium</strong> | November 2024</p>
+                <p>An overview of different dark matter models and their implications for early universe cosmology, focusing on my work in the Wess-Zumino Dark Radiation model and the Chameleon Early Dark Energy model.</p>
             </div>
         </div>
     </section>
@@ -244,18 +254,6 @@
     </footer>
 
     <script>
-        // Function to show a section and hide the others
-        function showSection(sectionId) {
-            const sections = document.querySelectorAll("section");
-            sections.forEach(section => {
-                if (section.id === sectionId) {
-                    section.style.display = "block";
-                } else {
-                    section.style.display = "none";
-                }
-            });
-        }
-
         // Show the 'About' section by default when the page loads
         document.addEventListener("DOMContentLoaded", function() {
             showSection('about');
@@ -264,3 +262,4 @@
 
 </body>
 </html>
+
