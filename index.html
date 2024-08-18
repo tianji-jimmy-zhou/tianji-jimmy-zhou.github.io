@@ -13,25 +13,28 @@
         }
 
         header {
-            background: url('WMAP_2012.png') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: black;
             color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
             text-align: center;
+            padding: 20px;
+            position: relative;
         }
 
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
+        header img {
+            max-width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        header h1, header p {
+            margin: 10px 0;
         }
 
         nav ul {
             padding: 0;
             list-style: none;
-            text-align: center;
+            margin-top: 15px;
         }
 
         nav ul li {
@@ -44,11 +47,26 @@
             text-decoration: none;
             font-size: 1.2rem;
         }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        section {
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="WMAP_2012.png" alt="Tianji Zhou's Profile Image">
         <h1>Tianji Zhou</h1>
         <p>Physics and Astronomy Student | Researcher</p>
         <nav>
@@ -57,7 +75,7 @@
                 <li><a onclick="showSection('education')">Education</a></li>
                 <li><a onclick="showSection('research')">Research</a></li>
                 <li><a onclick="showSection('publications')">Publications</a></li>
-                <li><a onclick="showSection('codes')">Skills</a></li>
+                <li><a onclick="showSection('skills')">Skills</a></li>
             </ul>
         </nav>
     </header>
@@ -170,3 +188,4 @@
 
 </body>
 </html>
+
