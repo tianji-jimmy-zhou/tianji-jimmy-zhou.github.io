@@ -7,6 +7,7 @@
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
+            font-size: 18px; /* Increased base font size */
             margin: 0;
             padding: 0;
             background-color: #2c2c2c; /* Deep grey background for the rest of the page */
@@ -22,8 +23,15 @@
             position: relative;
         }
 
-        header h1, header p {
+        header h1 {
             margin: 10px 0;
+            font-size: 2.5rem; /* Increased font size for header title */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 1.5rem; /* Increased font size for header subtitle */
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
@@ -41,11 +49,21 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.5rem; /* Increased font size for navigation links */
         }
 
         section {
             padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem; /* Increased font size for section titles */
+            margin-top: 0;
+            color: white;
+        }
+
+        p {
+            font-size: 1.2rem; /* Increased font size for paragraph text */
         }
 
         footer {
@@ -56,6 +74,7 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            font-size: 1rem; /* Increased font size for footer text */
         }
 
         .container {
@@ -63,13 +82,9 @@
             margin: 0 auto;
         }
 
-        h2 {
-            margin-top: 0;
-            color: white;
-        }
-
         .section-content h3 {
             color: #ffffff;
+            font-size: 1.5rem; /* Increased font size for subheadings */
         }
 
         .course-schedule {
@@ -90,13 +105,14 @@
 
         .course-schedule ul li h4 {
             margin: 0;
-            font-size: 1.2rem;
+            font-size: 1.4rem; /* Increased font size for course titles */
             color: #ffffff;
         }
 
         .course-schedule ul li p {
             margin: 5px 0 0 0;
             color: #bbbbbb;
+            font-size: 1.2rem; /* Increased font size for course details */
         }
     </style>
 </head>
