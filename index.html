@@ -7,12 +7,12 @@
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
-            font-size: 18px; /* Increased base font size */
+            font-size: 18px;
             margin: 0;
             padding: 0;
-            background-color: #2c2c2c; /* Deep grey background for the rest of the page */
+            background-color: #2c2c2c;
             color: white;
-            line-height: 2; /* Double space text */
+            line-height: 2;
         }
 
         header {
@@ -26,13 +26,13 @@
 
         header h1 {
             margin: 10px 0;
-            font-size: 2.5rem; /* Increased font size for header title */
+            font-size: 2.5rem;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
         header p {
             margin: 10px 0;
-            font-size: 1.5rem; /* Increased font size for header subtitle */
+            font-size: 1.5rem;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
@@ -50,7 +50,7 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
-            font-size: 1.5rem; /* Increased font size for navigation links */
+            font-size: 1.5rem;
         }
 
         section {
@@ -58,25 +58,23 @@
         }
 
         h2 {
-            font-size: 2rem; /* Increased font size for section titles */
+            font-size: 2rem;
             margin-top: 0;
             color: white;
         }
 
         p {
-            font-size: 1.2rem; /* Increased font size for paragraph text */
-            line-height: 2; /* Double space for paragraphs */
+            font-size: 1.2rem;
+            line-height: 2;
         }
 
         footer {
-            background-color: #2c2c2c; /* Deep grey for the footer */
+            background-color: #2c2c2c;
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
             width: 100%;
-            bottom: 0;
-            font-size: 1rem; /* Increased font size for footer text */
+            font-size: 1rem;
         }
 
         .container {
@@ -84,13 +82,23 @@
             margin: 0 auto;
         }
 
+        .education-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .section-content {
+            flex: 1;
+        }
+
         .section-content h3 {
             color: #ffffff;
-            font-size: 1.5rem; /* Increased font size for subheadings */
+            font-size: 1.5rem;
         }
 
         .course-schedule {
-            margin-top: 20px;
+            flex: 1;
         }
 
         .course-schedule ul {
@@ -107,15 +115,15 @@
 
         .course-schedule ul li h4 {
             margin: 0;
-            font-size: 1.4rem; /* Increased font size for course titles */
+            font-size: 1.4rem;
             color: #ffffff;
         }
 
         .course-schedule ul li p {
             margin: 5px 0 0 0;
             color: #bbbbbb;
-            font-size: 1.2rem; /* Increased font size for course details */
-            line-height: 2; /* Double space for course details */
+            font-size: 1.2rem;
+            line-height: 2;
         }
     </style>
 </head>
@@ -149,34 +157,34 @@
 
     <!-- Education Section -->
     <section id="education" class="education">
-        <div class="container">
-            <h2>Education</h2>
+        <div class="container education-container">
             <div class="section-content">
+                <h2>Education</h2>
                 <h3>BS. Physics and Astronomy (In Progress)</h3>
                 <p><strong>Haverford College</strong> | GPA: 3.983/4.0 | Sep 2022 - Present</p>
-                <p>Advanced Coursework:  General Relativity, Cosmological Physics, Astroparticle Physics, etc. </p>
-                
-                <div class="course-schedule">
-                    <h2>Current Course Schedule (2024 Fall)</h2>
-                    <ul>
-                        <li>
-                            <h4> Topics in Cosmology: The expansion rate/growth of structure puzzles & Deep learning in astrophysics (PHYS 5533, UPenn)</h4>
-                            <p>Monday, Wednesday - 1:45 PM to 3:14 PM</p>
-                        </li>
-                        <li>
-                            <h4> Data Analysis for the Natural Sciences I: Fundamentals (PHYS 3358, UPenn)</h4>
-                            <p>Tuesday, Thursday - 1:45 PM to 3:14 PM</p>
-                        </li>
-                        <li>
-                            <h4> Probability (MATH H218, Haverford)</h4>
-                            <p>Monday, Wednesday, Friday - 10:30 AM to 11:25 AM</p>
-                        </li>
-                        <li>
-                            <h4> Elementary Latin (LATN 001, Haverford)</h4>
-                            <p>Monday, Wednesday, Friday - 9:30 AM to 10:25 AM</p>
-                        </li>
-                    </ul>
-                </div>
+                <p>Advanced Coursework: General Relativity, Cosmological Physics, Astroparticle Physics, etc.</p>
+            </div>
+
+            <div class="course-schedule">
+                <h2>Current Course Schedule (2024 Fall)</h2>
+                <ul>
+                    <li>
+                        <h4>Topics in Cosmology (PHYS 5533, UPenn)</h4>
+                        <p>Monday, Wednesday - 1:45 PM to 3:14 PM</p>
+                    </li>
+                    <li>
+                        <h4>Data Analysis for the Natural Sciences (PHYS 3358, UPenn)</h4>
+                        <p>Tuesday, Thursday - 1:45 PM to 3:14 PM</p>
+                    </li>
+                    <li>
+                        <h4>Probability (MATH H218, Haverford)</h4>
+                        <p>Monday, Wednesday, Friday - 10:30 AM to 11:25 AM</p>
+                    </li>
+                    <li>
+                        <h4>Elementary Latin (LATN 001, Haverford)</h4>
+                        <p>Monday, Wednesday, Friday - 9:30 AM to 10:25 AM</p>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -221,29 +229,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email or send a message using the form below.</p>
-            <form action="your-email-endpoint" method="POST">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
     <footer>
         <p>&copy; 2024 Tianji Zhou. All Rights Reserved.</p>
     </footer>
@@ -269,5 +254,3 @@
 
 </body>
 </html>
-
-
