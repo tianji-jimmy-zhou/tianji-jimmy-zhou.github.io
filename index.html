@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tianji Zhou | Personal Website</title>
+    <title>About | Tianji Zhou</title>
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
@@ -16,24 +16,11 @@
         }
 
         header {
-            background: url('71bdcb8710a42b618c952accf1c97588.webp') no-repeat center center/cover;
+            background: url('header-image.webp') no-repeat center center/cover;
             height: 200px;
             color: white;
             text-align: center;
             padding: 20px;
-            position: relative;
-        }
-
-        header h1 {
-            margin: 10px 0;
-            font-size: 2.5rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-
-        header p {
-            margin: 10px 0;
-            font-size: 1.5rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
         nav ul {
@@ -51,10 +38,6 @@
             color: #fff;
             text-decoration: none;
             font-size: 1.5rem;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
         }
 
         section {
@@ -85,70 +68,24 @@
             max-width: 1000px;
             margin: 0 auto;
         }
-
-        .education-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .section-content {
-            flex: 1;
-        }
-
-        .section-content h3 {
-            color: #ffffff;
-            font-size: 1.5rem;
-        }
-
-        .course-schedule {
-            flex: 1;
-        }
-
-        .course-schedule ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .course-schedule ul li {
-            background-color: #3b3b3b;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-
-        .course-schedule ul li h4 {
-            margin: 0;
-            font-size: 1.4rem;
-            color: #ffffff;
-        }
-
-        .course-schedule ul li p {
-            margin: 5px 0 0 0;
-            color: #bbbbbb;
-            font-size: 1.2rem;
-            line-height: 2;
-        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Tianji Zhou</h1>
-        <p>Physics and Astronomy Student | Researcher</p>
+        <h1>About Me</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#talk">Talks</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="talks.html">Talks</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <section>
         <div class="container">
             <h2>About Me</h2>
             <p>Hello! I'm Tianji Zhou (周天佶). You could also call me Jimmy. I am a junior undergraduate in Physics and Astronomy at Haverford College with a concentration on Scientific Computing. I am deeply interested in theoretical/phenomenological cosmology and gravitational physics, and I am looking for research opportunities in these fields.</p>
@@ -161,105 +98,9 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container education-container">
-            <div class="section-content">
-                <h2>Education</h2>
-                <h3>BS. Physics and Astronomy (In Progress)</h3>
-                <p><strong>Haverford College</strong> | Sep 2022 - Present</p>
-                <p><strong>GPA</strong>: 3.983/4.0</p>
-                <p><strong>Advanced Coursework</strong>: General Relativity, Cosmological Physics, Advanced Classical Mechanics, Advanced Electromagnetism, Astroparticle Physics, etc.</p>
-            </div>
-
-            <div class="course-schedule">
-                <h2>Course Schedule (2024 Fall)</h2>
-                <ul>
-                    <li>
-                        <h4>Topics in Cosmology (PHYS 5533, UPenn)</h4>
-                        <p>Monday, Wednesday - 1:45 PM to 3:14 PM</p>
-                    </li>
-                    <li>
-                        <h4>Data Analysis for the Natural Sciences I(PHYS 3358, UPenn)</h4>
-                        <p>Tuesday, Thursday - 1:45 PM to 3:14 PM</p>
-                    </li>
-                    <li>
-                        <h4>Probability (MATH H218, Haverford)</h4>
-                        <p>Monday, Wednesday, Friday - 10:30 AM to 11:25 AM</p>
-                    </li>
-                    <li>
-                        <h4>Elementary Latin (LATN H001, Haverford)</h4>
-                        <p>Monday, Wednesday, Friday - 9:30 AM to 10:25 AM</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="research">
-        <div class="container">
-            <h2>Research Interests</h2>
-            <p>I am a researcher interested in questions in cosmology and gravitational physics. I enjoy using computational and analytical methods to solve the questions. I have worked on research projects related to generalized dark matter and neutron-star equations of state. I am also interested in the cosmological perturbation theory and cosmic microwave background.</p>
-        <div class="container">
-            <h2>Research Experience</h2>
-            <div class="section-content">
-                <h3>Influence of Data Noise on Spectral Representation in the Relativistic Inverse Stellar Structure Problem | PI: Dr. Lee Lindblom</h3>
-                <p>University of California, San Diego | Jul 2024 - Present</p>
-                <p>Numerically solved the Oppenheimer–Volkoff equations to compute neutron star mass and radius data from a specified state equation. Utilized the Levenberg–Marquardt algorithm to determine optimal Chebyshev-based spectral parameters and central pressures based on the generated data. Introduced 10%, 1%, and 0.1% noise to the mass and radius data, recalculated the optimal spectral parameters and central pressure, and analyzed the resulting modeling errors.</p>
-            </div>
-            <div class="section-content">
-                <h3>Chebyshev Based Spectral Representations of Neutron-Star Equations of State | PI: Dr. Lee Lindblom</h3>
-                <p>University of California, San Diego | Jun 2024 - Aug 2024</p>
-                <p>Developed causal parametric representations of neutron-star equations of state using Chebyshev polynomial-based spectral expansions, including both pressure-based and enthalpy-based representations. Implemented enthalpy-based and pressure-based representations in Python to solve the equation of state. Optimized spectral parameters and calculated modeling errors using the Levenberg–Marquardt algorithm for first-order and second-order phase transition equations of state. Demonstrated that Chebyshev polynomial representations exhibit faster convergence in modeling errors compared to simple power-law representations.</p>
-            </div>
-            <div class="section-content">
-                <h3>Model Independent Probes of Dark Sector Physics | PI: Prof. Daniel Grin</h3>
-                <p><strong>Haverford College</strong> | May 2023 - Present</p>
-                <p>Developed a method to constrain dark matter models using principal component analysis and the generalized dark matter (GDM) framework. Selected the Wess-Zumino Dark Radiation model and the Chameleon Early Dark Energy model as benchmarks and derived expressions for the equations of state and effective sound speeds of dark sectors to constrain the GDM fluids. Computed the equations of state and effective sound speeds using the Cosmic Linear Anisotropy Solving System (CLASS) code. Projected the equation of state and effective sound speed onto the principal components of the cosmological dark fluid.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <div class="section-content">
-                <p>Chebyshev Based Spectral Representations of Neutron-Star Equations of State</p>
-                <p>Lindblom, Lee & <strong>Zhou, Tianji</strong> | Submitted to Physical Review D, Aug 2024</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Talk Section -->
-    <section id="talk" class="talk">
-        <div class="container">
-            <h2>Talks</h2>
-            <div class="section-content">
-                <h3>Physics and Cosmology: A Personal Journey</h3>
-                <p><strong>University of California, San Diego</strong> | September 2024</p>
-                <p>A talk exploring my journey through physics and cosmology, focusing on the intersection between dark matter research and gravitational physics, with highlights from my recent work in neutron-star equations of state.</p>
-            </div>
-            <div class="section-content">
-                <h3>Dark Matter and Early Universe Theories</h3>
-                <p><strong>Haverford College Physics Colloquium</strong> | November 2024</p>
-                <p>An overview of different dark matter models and their implications for early universe cosmology, focusing on my work in the Wess-Zumino Dark Radiation model and the Chameleon Early Dark Energy model.</p>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <p>&copy; 2024 Tianji Zhou. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        // Show the 'About' section by default when the page loads
-        document.addEventListener("DOMContentLoaded", function() {
-            showSection('about');
-        });
-    </script>
-
 </body>
 </html>
 
