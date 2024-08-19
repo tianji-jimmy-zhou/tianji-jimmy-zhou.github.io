@@ -70,14 +70,20 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
+        /* Navigation Styles */
+        nav {
+            position: relative;
+        }
+
         nav ul {
             padding: 0;
             list-style: none;
             margin-top: 15px;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
             margin: 0 1rem;
         }
 
@@ -87,34 +93,84 @@
             font-size: 1.5rem;
         }
 
-        section {
-            padding: 20px;
+        /* Hide Menu on Mobile */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+            margin: 0;
         }
 
-        h2 {
-            font-size: 2rem;
-            margin-top: 0;
-            color: white;
+        .hamburger div {
+            width: 30px;
+            height: 3px;
+            background-color: white;
         }
 
-        p {
-            font-size: 1.2rem;
-            line-height: 2;
+        .menu {
+            display: flex;
+            transition: max-width 0.3s ease-out;
         }
 
-        footer {
-            background-color: #2c2c2c;
-            color: white;
+        .menu ul {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            nav ul.open {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #2c2c2c;
+                padding: 10px;
+                border-radius: 5px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        /* Flexbox Layout for About Section */
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .about-container .about-text {
+            flex: 1 1 60%; /* Adjust as needed */
+        }
+
+        .about-container .about-photo {
+            flex: 1 1 35%; /* Adjust as needed */
             text-align: center;
-            padding: 10px 0;
-            width: 100%;
-            font-size: 1rem;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .about-container .about-photo img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
 
         /* Media Queries for Responsive Design */
@@ -135,22 +191,12 @@
                 font-size: 1rem;
             }
 
-            nav ul li {
-                display: block;
-                margin: 5px 0;
-                text-align: center;
-            }
-
-            nav ul li a {
-                font-size: 1.2rem;
-            }
-
             section {
                 padding: 15px;
             }
 
-            .container {
-                padding: 0 10px;
+            .about-container {
+                flex-direction: column;
             }
 
             footer {
@@ -170,10 +216,6 @@
             header p {
                 font-size: 0.9rem;
             }
-
-            nav ul li a {
-                font-size: 1rem;
-            }
         }
     </style>
 </head>
@@ -183,7 +225,12 @@
         <h1>Tianji Zhou</h1>
         <p>Physics and Astronomy Student | Researcher</p>
         <nav>
-            <ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-menu" class="menu">
                 <li><a href="index.html">About</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="research.html">Research</a></li>
@@ -194,23 +241,37 @@
     </header>
 
     <section>
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Tianji Zhou (周天佶), but you can also call me Jimmy. I am a junior undergraduate in Physics and Astronomy at Haverford College with a concentration in Scientific Computing. My research interests include theoretical and phenomenological cosmology and gravitational physics. I am actively seeking research opportunities in these fields.</p>
-            
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> jzhou@haverford.edu</p>
-            <p><strong>Phone:</strong> +1 (484)-253-8449</p>
-            <p><strong>Address:</strong> 370 Lancaster Ave, Haverford, PA, USA</p>
-            
-            <h2>CV</h2>
-            <a href="Tianji_Zhou_CV.pdf" target="_blank" style="color: #fff;">Download My CV</a>
+        <div class="container about-container">
+            <!-- About Text -->
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm Tianji Zhou (周天佶), but you can also call me Jimmy. I am a junior undergraduate in Physics and Astronomy at Haverford College with a concentration in Scientific Computing. My research interests include theoretical and phenomenological cosmology and gravitational physics. I am actively seeking research opportunities in these fields.</p>
+                
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> jzhou@haverford.edu</p>
+                <p><strong>Phone:</strong> +1 (484)-253-8449</p>
+                <p><strong>Address:</strong> 370 Lancaster Ave, Haverford, PA, USA</p>
+                
+                <h2>CV</h2>
+                <a href="Tianji_Zhou_CV.pdf" target="_blank" style="color: #fff;">Download My CV</a>
+            </div>
+
+            <!-- About Photo -->
+            <div class="about-photo">
+                <img src="Tianji_Zhou_Photo.png" alt="Tianji Zhou Photo">
+            </div>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Tianji Zhou. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("open");
+        }
+    </script>
 </body>
 </html>
-
