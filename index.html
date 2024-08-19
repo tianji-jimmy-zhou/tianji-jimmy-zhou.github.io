@@ -145,26 +145,22 @@
             }
         }
 
-        /* Flexbox Layout for About Section */
+        /* Layout for About Section with Floating Image */
         .about-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
-        .about-container .about-text {
-            flex: 1;
+        .about-text {
+            font-size: 1.2rem;
+            line-height: 2;
         }
 
-        .about-container .about-photo {
-            flex: 0 1 250px; /* Set a fixed width for the image */
-            text-align: center;
-        }
-
-        .about-container .about-photo img {
-            max-width: 100%;
+        .about-photo img {
+            float: right;
+            margin: 0 0 10px 20px; /* Adds space between the image and text */
+            max-width: 300px; /* Larger image size */
             height: auto;
             border-radius: 10px;
         }
@@ -191,12 +187,10 @@
                 padding: 15px;
             }
 
-            .about-container {
-                flex-direction: column;
-            }
-
-            .about-photo {
-                margin-top: 20px;
+            .about-photo img {
+                float: none;
+                margin: 20px auto;
+                display: block;
             }
 
             footer {
@@ -275,4 +269,3 @@
     </script>
 </body>
 </html>
-
