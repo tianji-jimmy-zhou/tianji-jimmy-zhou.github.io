@@ -38,6 +38,7 @@
     </script>
 
     <style>
+        /* Global Styles */
         body {
             font-family: 'Times New Roman', Times, serif;
             font-size: 18px;
@@ -50,7 +51,7 @@
 
         header {
             background: url('header-image.webp') no-repeat center center/cover;
-            height: 250px; /* Increased height to make the picture larger */
+            height: 250px;
             color: white;
             text-align: center;
             padding: 20px;
@@ -59,13 +60,13 @@
 
         header h1 {
             margin: 10px 0;
-            font-size: 3rem; /* Increased font size for name */
+            font-size: 3rem;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
         
         header p {
             margin: 10px 0;
-            font-size: 1.5rem; /* Increased font size for subtitle */
+            font-size: 1.5rem;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
         }
 
@@ -113,6 +114,66 @@
         .container {
             max-width: 1000px;
             margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            header {
+                height: 150px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+                text-align: center;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                height: 120px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
