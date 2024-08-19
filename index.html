@@ -89,19 +89,28 @@
         section {
             padding: 20px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
+            min-height: 500px;
         }
 
-        .container {
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2c2c2c;
+            padding: 0 50px;
+        }
+
+        .text-content {
             max-width: 600px;
+            margin-right: 20px;
         }
 
         .profile-photo {
             max-width: 300px;
             max-height: 400px;
             border-radius: 10px;
-            margin-left: 20px;
             flex-shrink: 0;
         }
 
@@ -142,8 +151,8 @@
         </nav>
     </header>
 
-    <section>
-        <div class="container">
+    <section class="content-container">
+        <div class="text-content">
             <h2>About Me</h2>
             <p>Hello! I'm Tianji Zhou (周天佶), but you can also call me Jimmy. I am a junior undergraduate in Physics and Astronomy at Haverford College with a concentration in Scientific Computing. My research interests include theoretical and phenomenological cosmology and gravitational physics. I am actively seeking research opportunities in these fields.</p>
             
