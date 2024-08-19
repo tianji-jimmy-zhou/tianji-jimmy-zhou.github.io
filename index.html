@@ -115,10 +115,6 @@
             transition: max-width 0.3s ease-out;
         }
 
-        .menu ul {
-            display: flex;
-        }
-
         @media (max-width: 768px) {
             nav ul {
                 display: none;
@@ -159,11 +155,11 @@
         }
 
         .about-container .about-text {
-            flex: 1 1 60%; /* Adjust as needed */
+            flex: 1;
         }
 
         .about-container .about-photo {
-            flex: 1 1 35%; /* Adjust as needed */
+            flex: 0 1 250px; /* Set a fixed width for the image */
             text-align: center;
         }
 
@@ -197,6 +193,10 @@
 
             .about-container {
                 flex-direction: column;
+            }
+
+            .about-photo {
+                margin-top: 20px;
             }
 
             footer {
@@ -275,3 +275,4 @@
     </script>
 </body>
 </html>
+
