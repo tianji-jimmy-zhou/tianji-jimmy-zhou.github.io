@@ -17,26 +17,6 @@
     <meta property="og:url" content="https://yourdomain.com">
     <meta property="og:type" content="website">
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Tianji Zhou (Jimmy Zhou)",
-      "url": "https://yourdomain.com",
-      "email": "mailto:jzhou@haverford.edu",
-      "jobTitle": "Physics and Astronomy Student",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Haverford College"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/in/your-profile",
-        "https://github.com/quantumerjimmy"
-      ]
-    }
-    </script>
-
     <style>
         /* Global Styles */
         body {
@@ -47,6 +27,10 @@
             background-color: #2c2c2c;
             color: white;
             line-height: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         header {
@@ -56,6 +40,7 @@
             text-align: center;
             padding: 20px;
             position: relative;
+            width: 100%;
         }
 
         header h1 {
@@ -71,10 +56,6 @@
         }
 
         /* Navigation Styles */
-        nav {
-            position: relative;
-        }
-
         nav ul {
             padding: 0;
             list-style: none;
@@ -93,123 +74,27 @@
             font-size: 1.5rem;
         }
 
-        /* Hide Menu on Mobile */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 30px;
-            height: 21px;
-            cursor: pointer;
-            margin: 0;
-        }
-
-        .hamburger div {
-            width: 30px;
-            height: 3px;
-            background-color: white;
-        }
-
-        .menu {
-            display: flex;
-            transition: max-width 0.3s ease-out;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-            }
-
-            nav ul.open {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                background-color: #2c2c2c;
-                padding: 10px;
-                border-radius: 5px;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-
-            nav ul li a {
-                font-size: 1.2rem;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-        }
-
-        /* Layout for About Section with Floating Image */
+        /* Layout for About Section */
         .about-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .about-text {
-            font-size: 1.2rem;
-            line-height: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
         }
 
         .about-photo img {
-            float: right;
-            margin: 0 0 10px 20px; /* Adds space between the image and text */
-            max-width: 300px; /* Larger image size */
+            max-width: 300px;
             height: auto;
             border-radius: 10px;
+            margin-bottom: 20px;
         }
 
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            body {
-                font-size: 16px;
-            }
-
-            header {
-                height: 150px;
-            }
-
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header p {
-                font-size: 1rem;
-            }
-
-            section {
-                padding: 15px;
-            }
-
-            .about-photo img {
-                float: none;
-                margin: 20px auto;
-                display: block;
-            }
-
-            footer {
-                font-size: 0.9rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                height: 120px;
-            }
-
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            header p {
-                font-size: 0.9rem;
-            }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -219,12 +104,7 @@
         <h1>Tianji Zhou</h1>
         <p>Physics and Astronomy Student | Researcher</p>
         <nav>
-            <div class="hamburger" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <ul id="nav-menu" class="menu">
+            <ul>
                 <li><a href="index.html">About</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="research.html">Research</a></li>
@@ -234,26 +114,24 @@
         </nav>
     </header>
 
-    <section>
-        <div class="container about-container">
-            <!-- About Text -->
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>Hello! I'm Tianji Zhou (周天佶), but you can also call me Jimmy. I am a junior undergraduate in Physics and Astronomy at Haverford College with a concentration in Scientific Computing. My research interests include theoretical and phenomenological cosmology and gravitational physics. I am actively seeking research opportunities in these fields.</p>
-                
-                <h2>Contact Information</h2>
-                <p><strong>Email:</strong> jzhou@haverford.edu</p>
-                <p><strong>Phone:</strong> +1 (484)-253-8449</p>
-                <p><strong>Address:</strong> 370 Lancaster Ave, Haverford, PA, USA</p>
-                
-                <h2>CV</h2>
-                <a href="Tianji_Zhou_CV.pdf" target="_blank" style="color: #fff;">Download My CV</a>
-            </div>
+    <section class="about-container">
+        <!-- About Photo -->
+        <div class="about-photo">
+            <img src="Tianji_Zhou_Photo.jpg" alt="Tianji Zhou Photo">
+        </div>
 
-            <!-- About Photo -->
-            <div class="about-photo">
-                <img src="Tianji_Zhou_Photo.jpg" alt="Tianji Zhou Photo">
-            </div>
+        <!-- About Text -->
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hello! I'm Tianji Zhou (周天佶), but you can also call me Jimmy. I am a junior undergraduate in Physics and Astronomy at Haverford College with a concentration in Scientific Computing. My research interests include theoretical and phenomenological cosmology and gravitational physics. I am actively seeking research opportunities in these fields.</p>
+            
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> jzhou@haverford.edu</p>
+            <p><strong>Phone:</strong> +1 (484)-253-8449</p>
+            <p><strong>Address:</strong> 370 Lancaster Ave, Haverford, PA, USA</p>
+            
+            <h2>CV</h2>
+            <a href="Tianji_Zhou_CV.pdf" target="_blank" style="color: #fff;">Download My CV</a>
         </div>
     </section>
 
@@ -261,11 +139,6 @@
         <p>&copy; 2024 Tianji Zhou. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("nav-menu");
-            menu.classList.toggle("open");
-        }
-    </script>
 </body>
 </html>
+
