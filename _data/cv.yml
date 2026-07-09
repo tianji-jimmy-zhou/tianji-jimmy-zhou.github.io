@@ -1,0 +1,135 @@
+cv:
+  name: Tianji (Jimmy) Zhou
+  label: Incoming Physics Ph.D. Student
+  email: jimmyzho@usc.edu
+  location: Los Angeles, CA
+  image: ""
+  summary: Incoming Physics Ph.D. student at the University of Southern California with research interests in data-driven cosmology, dark sector physics, and deep learning.
+
+  social_networks:
+    - network: GitHub
+      username: tianji-jimmy-zhou
+    - network: LinkedIn
+      username: tianji-zhou-747082284
+    - network: ORCID
+      username: 0009-0005-6605-1358
+
+  sections:
+    Education:
+      - institution: University of Southern California
+        location: Los Angeles, CA
+        area: Physics
+        studyType: Ph.D.
+        start_date: "2026"
+        end_date: Present
+        highlights:
+          - Incoming Physics Ph.D. student.
+
+      - institution: Haverford College
+        location: Haverford, PA
+        area: Physics and Astronomy, Scientific Computing Concentration
+        studyType: B.S.
+        start_date: "2022-09"
+        end_date: "2026"
+        score: "GPA: 3.989/4.000"
+        highlights:
+          - Graduated magna cum laude.
+          - "Thesis title: Model-independent probe of dark sector physics."
+          - "Thesis advisor: Prof. Daniel Grin."
+
+    Publications:
+      - title: "What it Takes to Solve the Hubble Tension through Modifications of Cosmological Recombination II: In Light of ACT DR6 and DESI DR2"
+        authors:
+          - Nanoom Lee
+          - Tianji Zhou
+        publisher: arXiv:2606.06495
+        releaseDate: "2026-06"
+        url: https://arxiv.org/abs/2606.06495
+
+      - title: Uncertainty Quantification for the Relativistic Inverse Stellar Structure Problem
+        authors:
+          - Lee Lindblom
+          - Tianji Zhou
+        publisher: Physical Review D 111, 063024
+        releaseDate: "2025-03"
+        url: https://doi.org/10.1103/PhysRevD.111.063024
+
+      - title: Chebyshev Based Spectral Representations of Neutron-Star Equations of State
+        authors:
+          - Lee Lindblom
+          - Tianji Zhou
+        publisher: Physical Review D 110, 083030
+        releaseDate: "2024-10"
+        url: https://doi.org/10.1103/PhysRevD.110.083030
+
+    Research Experience:
+      - bullet: "**What It Takes to Solve the Hubble Tension through Modifications of Cosmological Recombination II** — Johns Hopkins University, Baltimore, MD; with Dr. Nanoom Lee and Prof. Marc Kamionkowski's group; Jun 2025–present. Developed data-driven recombination-history modifications using ACT DR6 CMB and DESI DR2 BAO data to test whether recombination physics can resolve the Hubble tension."
+
+      - bullet: "**Model-Independent Probe of Dark Sector Physics** — Haverford College, Haverford, PA; with Prof. Daniel Grin; May 2023–present. Developed generalized-dark-matter and principal-component-analysis methods for testing dark-sector models against cosmological observables."
+
+      - bullet: "**Spectral Representations and Inverse Stellar Structure for Neutron Stars** — University of California, San Diego, La Jolla, CA; with Dr. Lee Lindblom; Jun 2024–Oct 2024. Constructed Chebyshev-based representations of neutron-star equations of state and quantified how noisy mass-radius data affect inverse stellar-structure inference."
+
+    Specialized Training and Summer Schools:
+      - bullet: "**Perimeter Scholars International Start Satellite Program**, Bishop's University, May 2025. Topics included path integrals, quantum information and thermodynamics, numerical methods, condensed matter physics, and symmetries."
+
+      - bullet: "**ACT + SPT CMB Analysis Summer School**, The University of Chicago, Jul 2024. Summer school on analysis methods for cosmic microwave background data."
+
+    Conferences and Talks:
+      - bullet: "**Resolving the Hubble Tension via Scale-Dependent Physics**, KINSC Undergraduate Science Research Symposium, Haverford College, Sep 2025. Poster presentation."
+
+      - bullet: "**Resolving the Hubble Tension via Scale-Dependent Physics**, Undergraduate Cosmology Workshop, Massachusetts Institute of Technology, Jul 2025. Oral presentation."
+
+      - bullet: "**Uncertainty Quantification for the Relativistic Inverse Stellar Structure Problem**, APS Global Physics Summit 2025, American Physical Society, Mar 2025. Oral presentation."
+
+      - bullet: "**Chebyshev Based Spectral Representations of Neutron-Star Equations of State**, Start Talking Science, Science History Institute, Nov 2024. Poster presentation."
+
+      - bullet: "**Uncertainty Quantification for the Relativistic Inverse Stellar Structure Problem**, Keck Northeast Astronomy Consortium, Colgate University, Sep 2024. Oral presentation."
+
+      - bullet: "**Model-Independent Probes of Dark Sector Physics**, Undergraduate Cosmology Workshop, Massachusetts Institute of Technology, Jul 2024. Oral presentation."
+
+      - bullet: "**Model-Independent Probes of Dark Sector Physics**, APS April Meeting, American Physical Society, Apr 2024. Poster presentation."
+
+      - bullet: "**The Behavior of the Equation of State and the Sound Speed for the Dark Matter Fluid in the Wess-Zumino Dark Radiation Model**, Keck Northeast Astronomy Consortium, Wesleyan University, Oct 2023. Oral presentation."
+
+      - bullet: "**The Behavior of the Equation of State and the Sound Speed for the Dark Matter Fluid in the Wess-Zumino Dark Radiation Model**, KINSC Undergraduate Science Research Symposium, Haverford College, Sep 2023. Poster presentation."
+
+    Teaching and Service:
+      - bullet: "**IDEA Seminar Student Organizer**, Haverford College Department of Physics and Astronomy, Sep 2022–present. Organized a department-wide Cosmology Colloquium, led student-faculty panels on inclusion, diversity, equity, and accessibility, and helped analyze a departmental climate survey."
+
+      - bullet: "**Teaching Assistant and Grader**, Haverford College Department of Physics and Astronomy, Sep 2023–present. Served as TA and grader for general relativity, waves and optics, and introductory quantum mechanics; held office hours; and provided feedback on weekly written assignments."
+
+      - bullet: "**Secretary**, Society of Physics Students, Haverford College, Sep 2022–May 2024. Compiled weekly meeting summaries and organized community-building events, an REU Q&A session, and physics socials."
+
+    Skills:
+      - name: Software
+        level: Research
+        icon: fa-solid fa-laptop-code
+        keywords: "Python, Mathematica, LaTeX, Linux, HTML, MATLAB, CLASS"
+
+      - name: Research Methods
+        level: Research
+        icon: fa-solid fa-chart-line
+        keywords: "Cosmological inference, principal component analysis, Fisher matrices, Markov Chain Monte Carlo, numerical modeling"
+
+    Languages:
+      - name: Mandarin
+        summary: Native
+
+      - name: Shanghainese
+        summary: Native
+
+      - name: English
+        summary: Fluent
+
+      - name: Cantonese
+        summary: Elementary
+
+    Interests:
+      - name: Karting
+        icon: fa-solid fa-flag-checkered
+
+      - name: Hiking
+        icon: fa-solid fa-person-hiking
+
+      - name: Counter-Strike 2
+        icon: fa-solid fa-gamepad
