@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 display_name: '<span style="font-weight: 800;">Tianji</span> Zhou'
-subtitle: Incoming Physics Ph.D. student, University of Southern California
+subtitle: '<em>Incoming Physics Ph.D. student, University of Southern California</em>'
 
 profile:
   align: right
@@ -34,6 +34,7 @@ latest_posts:
   }
 
   .post article .clearfix {
+    margin-top: 2.5rem;
     margin-bottom: 2.75rem;
   }
 
