@@ -8,6 +8,7 @@ subtitle: '<em>Incoming Physics Ph.D. student, University of Southern California
 profile:
   align: right
   image: Tianji_Zhou_Photo.jpg
+  image_alt: Portrait of Tianji (Jimmy) Zhou wearing sunglasses and an outdoor jacket with a mountain landscape behind him.
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Los Angeles, CA</p>

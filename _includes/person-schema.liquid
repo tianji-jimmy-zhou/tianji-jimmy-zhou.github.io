@@ -1,0 +1,33 @@
+{% assign profile_image_url = site.url | append: '/assets/img/Tianji_Zhou_Photo.jpg' %}
+{% assign profile_image_square_url = site.url | append: '/assets/img/Tianji_Zhou_Photo-square.jpg' %}
+{% assign profile_image_4x3_url = site.url | append: '/assets/img/Tianji_Zhou_Photo-4x3.jpg' %}
+{% assign profile_image_16x9_url = site.url | append: '/assets/img/Tianji_Zhou_Photo-16x9.jpg' %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": {{ site.url | append: '/#profile-page' | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "name": {{ site.title | jsonify }},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": {{ site.url | append: '/#person' | jsonify }},
+    "name": {{ site.title | jsonify }},
+    "alternateName": "Jimmy Zhou",
+    "description": {{ site.description | strip_newlines | strip | jsonify }},
+    "image": [
+      {{ profile_image_square_url | jsonify }},
+      {{ profile_image_4x3_url | jsonify }},
+      {{ profile_image_16x9_url | jsonify }},
+      {{ profile_image_url | jsonify }}
+    ],
+    "sameAs": [
+      {{ 'https://github.com/' | append: site.data.socials.github_username | jsonify }},
+      {{ 'https://www.linkedin.com/in/' | append: site.data.socials.linkedin_username | jsonify }},
+      {{ 'https://orcid.org/' | append: site.data.socials.orcid_id | jsonify }},
+      {{ 'https://scholar.google.com/citations?user=' | append: site.data.socials.scholar_userid | jsonify }}
+    ]
+  }
+}
+</script>
